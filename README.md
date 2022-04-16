@@ -7,6 +7,7 @@ The repo consist with some of type patterns usage in C++
     * Singleton
     * Factory
 - Behavioral
+    * Curiously Recurring Template Pattern
 - Structural
 
 ###Resources
