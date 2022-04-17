@@ -6,6 +6,7 @@ The repo consist with some of type patterns usage in C++
 - Creational
     * Singleton
     * Factory
+    * Builder
 - Behavioral
     * Curiously Recurring Template Pattern (CRTP)
 - Structural
