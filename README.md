@@ -2,15 +2,16 @@
 
 The repo consist with some of type patterns usage in C++
 
-###Implemented Patterns
+### Implemented Patterns
 - Creational
     * Singleton
     * Factory
+    * Builder
 - Behavioral
     * Curiously Recurring Template Pattern (CRTP)
 - Structural
 
-###Resources
+### Resources
 While developement mostly used below resources.
 
 - [Refactoring Guru](https://refactoring.guru/design-patterns/factory-method/cpp/example)
