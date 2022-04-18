@@ -11,6 +11,7 @@ The repo consist with some of type patterns usage in C++
     * Curiously Recurring Template Pattern (CRTP)
     * Observer
 - Structural
+    * Adapter
 
 ### Resources
 While developement mostly used below resources.
