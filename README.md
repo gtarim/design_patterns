@@ -9,6 +9,7 @@ The repo consist with some of type patterns usage in C++
     * Builder
 - Behavioral
     * Curiously Recurring Template Pattern (CRTP)
+    * Observer
 - Structural
 
 ### Resources
