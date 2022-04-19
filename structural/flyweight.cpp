@@ -1,5 +1,4 @@
 #include <iostream>
-#include <memory>
 
 class Car
 {
@@ -36,5 +35,5 @@ int main()
     Car car1 = CarFactory::getCar(CarFactory::CarType::Bmw);
     Car car2 = CarFactory::getCar(CarFactory::CarType::Nissan);
     Car car3 = CarFactory::getCar(CarFactory::CarType::Bmw);
-    Car car2 = CarFactory::getCar(CarFactory::CarType::Nissan);
+    Car car4 = CarFactory::getCar(CarFactory::CarType::Nissan);
 }
