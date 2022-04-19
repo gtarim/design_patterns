@@ -10,6 +10,7 @@ The repo consist with some of type patterns usage in C++
 - Behavioral
     * Curiously Recurring Template Pattern (CRTP)
     * Observer
+    * Strategy
 - Structural
     * Adapter
     * Flyweight
