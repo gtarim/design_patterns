@@ -12,6 +12,7 @@ The repo consist with some of type patterns usage in C++
     * Observer
 - Structural
     * Adapter
+    * Flyweight
 
 ### Resources
 While developement mostly used below resources.
