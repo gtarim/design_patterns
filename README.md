@@ -3,14 +3,14 @@
 The repo consist with some of type patterns usage in C++
 
 ### Implemented Patterns
-- Creational
-    * Singleton
-    * Factory
-    * Builder
 - Behavioral
     * Curiously Recurring Template Pattern (CRTP)
     * Observer
     * Strategy
+- Creational
+    * Singleton
+    * Factory
+    * Builder
 - Structural
     * Adapter
     * Flyweight
