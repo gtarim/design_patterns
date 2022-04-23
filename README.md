@@ -11,6 +11,7 @@ The repo consist with some of type patterns usage in C++
     * Singleton
     * Factory
     * Builder
+    * Prototype
 - Structural
     * Adapter
     * Flyweight
