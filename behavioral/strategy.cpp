@@ -7,17 +7,17 @@ struct Transportation
     virtual void transport() const = 0;
 };
 
-struct Vehicle : Transportation
+struct Vehicle final : Transportation
 {
     void transport() const override { std::cout << "VehicleTransportation\n"; };
 };
 
-struct Train : Transportation
+struct Train final : Transportation
 {
     void transport() const override { std::cout << "TrainTransportation\n"; };
 };
 
-struct Plane : Transportation
+struct Plane final : Transportation
 {
     void transport() const override { std::cout << "PlaneTransportation\n"; };
 };
