@@ -7,14 +7,14 @@ The repo consist with some of type patterns usage in C++
     * Curiously Recurring Template Pattern (CRTP)
     * Observer
     * Strategy
-    * Adapter
 - Creational
-    * Singleton
-    * Factory
     * Builder
+    * Factory
     * Prototype
+    * Singleton
 - Structural
     * Adapter
+    * Bridge
     * Flyweight
 
 ### Resources
