@@ -17,6 +17,7 @@ The repo consist with some of type patterns usage in C++
     * Bridge
     * Flyweight
     * Proxy
+    * Facade
 
 ### Resources
 While developement mostly used below resources.
