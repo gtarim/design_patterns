@@ -6,29 +6,44 @@ struct Car { Car(){ std::cout << "car ctor\n"; } };
 struct Bmw : public Car { Bmw(){ std::cout << "bmw ctor\n"; } };
 struct Ford : public Car { Ford(){ std::cout << "ford ctor\n"; } };
 
-struct CarFactory
+namespace FirstImpl
 {
-    virtual std::unique_ptr<Car> create() const = 0;
-};
-
-struct BmwFactory : public CarFactory
+struct Factory
 {
-    std::unique_ptr<Car> create() const override
+    enum class Type { Bmw, Ford };
+    std::unique_ptr<Car> create(Type type) const
     {
-        return std::make_unique<Bmw>();
+        if (type == Type::Bmw)
+            return std::make_unique<Bmw>();
+        else if (type == Type::Ford)
+            return std::make_unique<Ford>();
+        else
+            return std::unique_ptr<Car>{};
     }
 };
+};
 
-struct FordFactory : public CarFactory 
+namespace SecondImpl
 {
-    std::unique_ptr<Car> create() const override
+template <typename T>
+struct Factory
+{
+    std::unique_ptr<Car> create() const
     {
-        return std::make_unique<Ford>();
+        return std::make_unique<T>();
     }
+};
 };
 
 int main()
 {
-    FordFactory ffactory;
-    std::unique_ptr<Car> car = ffactory.create();
+    {
+        FirstImpl::Factory factory;
+        std::unique_ptr<Car> bmw = factory.create(FirstImpl::Factory::Type::Bmw);
+    }
+
+    {
+        SecondImpl::Factory<Bmw> factory;
+        auto bmw = factory.create();
+    }
 }
